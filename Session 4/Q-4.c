@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,i,arr[5],arr2[5],arr3[5];
+    int i,arr[5],arr2[5],arr3[5];
     for(i=0;i<5;i++)
     {
         printf("Enter value of arr[%d] :",i);
