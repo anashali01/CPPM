@@ -1,57 +1,46 @@
 #include <stdio.h>
 int main(){
     int num1,num2,choice;
-
-    printf("Enter Your first number:");
+    printf("Enter first number:");
     scanf("%d",&num1);
-
-    printf("Enter Your second number:");
+    printf("Enter second number:");
     scanf("%d",&num2);
 
-    
-    printf("Press 1 for addition\n");
-    printf("Press 2 for subtraction\n");
-    printf("Press 3 for multiplication\n");
-    printf("Press 4 for divison\n");
-    printf("Press 5 for modulus\n");
-    printf("Press 6 for exist\n");
-    
+do{
+    printf("Press 1 Add\n");
+    printf("Press 2 Sub\n");
+    printf("Press 3 Mul\n");
+    printf("Press 4 Div\n");
+    printf("Press 5 Mod\n");
+    printf("Press 6 Exit\n");
 
-    printf("Enter your choice :");
+    printf("Choice:");
     scanf("%d",&choice);
 
-    do
-    {
-        switch (choice)
-    {
-    case 1:
-    printf("Answer of addition : %d",num1+num2);
-    break;
-
-    case 2:
-    printf("Answer of subtraction : %d",num1-num2);
-    break;
-
-    case 3:
-    printf("Answer of multiplication : %d",num1*num2);
-    break;
-    case 4:
-    printf("Answer of divison : %d",num1/num2);
-    break;
-    case 5:
-    printf("Answer of modulus : %d",num1%num2);
-    break;
-    case 6:
-    printf("You Exit Enjoy!!");
-    break;
-    default:
-    printf("Invalid number");
-
+    
+         switch(choice){
+            case 1:
+            printf("Ans of Add: %d",num1+num2);
+            break;
+            case 2:
+            printf("Ans of Sub: %d",num1-num2);
+            break;
+            case 3:
+            printf("Ans of Mul: %d",num1*num2);
+            break;
+            case 4:
+            printf("Ans of Div: %d",num1/num2);
+            break;
+            case 5:
+            printf("Ans of Mod: %d",num1%num2);
+            break;
+            case 6:
+            printf("Exit !!!");
+            break;
     }
-    } while (choice != 6);
-    
-    
+    }
+    while(choice != 6);
+   
     return 0;
-    
-    
+     
 }
